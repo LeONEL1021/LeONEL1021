@@ -14,7 +14,9 @@ int main()
             cin >> arreglo[i];
             if(arreglo[i]<0){
                 condicion=arreglo[i];
-                break;
+            }
+            else{
+                cout<<"suma="<<arreglo<<endl;
             }
 
         }
