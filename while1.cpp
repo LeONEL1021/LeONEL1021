@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int numero = 0, suma = 0, posicion = 0;
-    int sumatoria[25] = {0};
+    int sumatoria[25];
 
     cout << "ingrese un numero entero" << endl;
     cin >> sumatoria[posicion];

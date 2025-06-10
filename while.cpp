@@ -1,26 +1,20 @@
 #include <iostream>
 using namespace std;
+int main(){
+    int numero,suma=0;
 
-int main()
-{
-    int n1,condicion=1;
-    int arreglo[10];
+while (true) {
+        cout << "Ingresa un número (negativo para terminar): ";
+        cin >> numero;
 
-    while (condicion > 0)
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            cout << "ingresa un numero: " << i << endl;
-            cin >> arreglo[i];
-            if(arreglo[i]<0){
-                condicion=arreglo[i];
-            }
-            else{
-                cout<<"suma="<<arreglo<<endl;
-            }
-
+        if (numero < 0) {
+            break;  // Termina el bucle si el número es negativo
         }
 
+        suma += numero;  // Suma solo si el número es positivo
     }
+
+    cout << "La suma de los números ingresados es: " << suma << endl;
+
     return 0;
 }
